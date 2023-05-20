@@ -1,0 +1,34 @@
+<br>
+<div style="text-align: center;">
+    <h1> Angular Pipe</h1>
+<div style=" text-align: center; width: 100%">
+  <div style="width: 40%; float: left; border: solid 1px black">
+    <h1>Upper Case</h1>
+    <b>{{title|uppercase}}</b>
+
+    <h2>Lowercase</h2>
+    <b>{{title|lowercase}}</b>
+
+    <h2>Currency Pipe</h2>
+    <b>{{606.90| currency:"USD"}}</b><br>
+    <b>{{6589.23 | currency:"USD":true}}</b>
+
+    <h2>Date Pipe</h2>
+    <b>{{today|date:'d/M/y'}}</b>
+    <b>{{todaydate | date:'shortTime'}}</b>
+
+    <h1>Decimal Pipe</h1>
+    <b>{{ 454.78787814 | number: '3.4-4' }}</b>
+
+
+        <h1>Json Pipe</h1>
+        <b>{{ jsonval | json }}</b>
+        <h1>Percent Pipe</h1>
+        <b>{{00.54565 | percent}}</b>
+        <h1>Slice Pipe</h1>
+        <b>{{months | slice:2:6}}</b>
+        <br>
+        <b>Square root of 25 is: {{25 | sqart}}</b>
+
+</div>
+</div>

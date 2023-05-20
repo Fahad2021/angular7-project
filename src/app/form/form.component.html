@@ -1,0 +1,26 @@
+<div class="main">
+<h1>{{title}}</h1>
+<form #userlogin="ngForm"(ngSubmit)="onClicksubmit(userlogin.value)">
+    <input type="text"name="emailid" placeholder="email" ngModel >
+    <br>
+    <input type="password"name="passwd" placeholder="password" ngModel>
+    <br>
+    <input type="submit" value="submit">
+</form>
+
+<h1>{{title2}}</h1>
+<div>
+<form [formGroup]="formdata"(ngSubmit)="onClicksubmit2(formdata.value)">
+    <input type="text" class="fortexbox" name="emailid" placeholder="email" 
+    formControlName="emailid" >
+    <br>
+    <input type="password" class="fortexbox" name="passwd" 
+    placeholder="password" formControlName="passwd">
+    <br>
+    <input type="submit" [disabled]="!formdata.valid" class="forsubmit" value="Log In">
+</form>
+</div>
+<p>
+    Email Entered is:{{emailid}}
+</p>
+</div>

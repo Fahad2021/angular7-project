@@ -1,0 +1,20 @@
+<div style="text-align: center;">
+  <h1>{{title}}</h1>
+  <div>
+    Month:
+    <select>
+      <option *ngFor="let i of months">
+        {{i}}
+      </option>
+    </select>
+  </div>
+  <br>
+  
+  
+  <div>
+    <span *ngIf="isaviable;then condition1 else condition2">Condition Valid</span>
+    <ng-template #condition1>Condition is Valid</ng-template>
+    <ng-template #condition2>Condition is Invalid</ng-template>
+  </div>
+  
+  </div>
